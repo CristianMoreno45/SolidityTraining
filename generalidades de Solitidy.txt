@@ -1,0 +1,29 @@
+Generalidades de Solidity:
+
+	El IDE se llama Remix y es web
+	todas las lineas deben terminar en punto y coma salvo unas excepciones.
+	Los contratos son como ejecutables de la solución
+		Siempre se inicia con "pragma solidity [version]"
+		
+	Los operadores logicos (<, >, <=, >=, ==, !=) son iguales a Javascirpt
+	Los accesores pueden ser public, private, internal o external, en el caso de as variables van antes del nombre, en el caso de las funciones va despues de los parenteses de los parametros
+	Los operadores matematicos (+, -, *, /, % son iguales a Javascirpt, la potencia es **
+	Dentro de los tipos de datos estan fuertemente tipados uint e int donde el primero es un entero sin signo (0 -> 2^256) y el segundo con signo (-> 2^256 - 2^256) 
+		Exite un tipo de dato llamado address donde simboloza una dirección de billetera, si tiene el oepradore playable, es una direccion que recibe o emite ethers
+	strunct = dto
+		asignacion [nombreStructura] [nombre_variable] (val1,val2,val3...valn);
+	mapping = diccionario <clave, valor>
+	los arrays son igual a Javascript
+	
+	Las funciones se deben escribir en pascalCase
+	Los parametros en miuscula
+		los parametros de string siempre llevan la palabra memory
+	las variables en minuscula
+	los miebros de un enum deben ser escritos en mayusculas
+	la herencia se da por medio de la palabra is y solo aplica en los contratos <nombre_contrato_padre> is <nombre_contrato_hijo> 
+		para importar el contrato basta con especificar import "./nombre_del_archivo.sol";
+		para importar el contrato de github import "url.sol"; par
+		Si hay varios contratos en un  mismo archivo, se importa import {<nombre_contrato_padre>}  from "./nombre_del_archivo.sol";
+	Las library son otro tipo de objeto en Solidity
+		 se importa: import {<nombre_libreria>}  from "./nombre_del_archivo.sol";
+		 y se usa: using <nombre_libreria> for <tipo_de_dato>, se puede suar el * para cualquier tipo de dato.
