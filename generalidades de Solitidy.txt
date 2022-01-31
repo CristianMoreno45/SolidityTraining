@@ -1,6 +1,7 @@
 Generalidades de Solidity:
 
 	El IDE se llama Remix y es web
+	Es case sensitive
 	todas las lineas deben terminar en punto y coma salvo unas excepciones.
 	Los contratos son como ejecutables de la solución
 		Siempre se inicia con "pragma solidity [version]"
@@ -27,3 +28,6 @@ Generalidades de Solidity:
 	Las library son otro tipo de objeto en Solidity
 		 se importa: import {<nombre_libreria>}  from "./nombre_del_archivo.sol";
 		 y se usa: using <nombre_libreria> for <tipo_de_dato>, se puede suar el * para cualquier tipo de dato.
+	modifier son reglas antes de ejecutar las funciones
+	
+	SafeMath y 
